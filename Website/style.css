@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+body {
+  background-color: black;
+  font-family: "Bebas Neue", cursive;
+  color: #00ffff;
+  text-align: center;
+  align-content: center;
+  margin: 0;
+}
+h1 {
+  font-size: 8vw;
+  margin-bottom: 0;
+  margin-top: 2vh;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1.75vw;
+  margin-left: 25vw;
+  width: 50vw;
+  font-size: 2vw;
+}
+a {
+  font-size: 2vw;
+  color: #66ff00;
+  text-decoration: none;
+}
+button {
+  border: none;
+  height: 7vw;
+  width: 13vw;
+  padding: 2vw, 2vw;
+  background-color: #00ffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 2vw;
+  font-family: "Bebas Neue", cursive;
+  transition-duration: 0.5s all;
+  margin-bottom: 3vw;
+  margin-top: 0;
+}
+button:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+#intro {
+  margin-bottom: 3vw;
+  font-style: italic;
+}
+nav {
+  align-items: left;
+  text-align: left;
+  background-color: #00ffff;
+  color: black;
+  margin: 0;
+  padding: 0vw;
+  font-size: 2vw;
+  height: 6vh;
+  padding-top: 1.5vh;
+}
+.navbar {
+  color: black;
+  margin-left: 5vw;
+}
+#main {
+  margin-left: 63.5vw;
+}
+textarea {
+  background-color: #00ffff;
+  font-family: "Bebas Neue", cursive;
+  width: 20vw;
+  letter-spacing: 0.75px;
+}
+input
+{
+  background-color: #00ffff;
+  font-family: "Bebas Neue", cursive;
+  width: 20vw;
+  letter-spacing: 0.75px;
+  border: 0;
+  margin-bottom: 1vw;
+}
+#submitbt {
+  padding: 0.5vw;
+  width: 12vw;
+  height: 4.5vw;
+  padding: 1vw;
+  margin-top: 1vw;
+}
+#nav-heading {
+  margin-left: 1.5vw;
+  display: inline;
+}
+#copy {
+  color: #707070;
+  position: absolute;
+  bottom: 0px;
+  text-align: right;
+  margin-left: 48vw;
+  margin-bottom: 0;
+  font-size: 1vw;
+}
+#fcf-button,
+#link-bt{
+  padding: 0.5vw;
+  width: 12vw;
+  height: 4.5vw;
+  padding: 1vw;
+  margin-top: 1vw;
+  margin-left: 0;
+}
+#link-bt{
+    margin-left: 44.5%;
+    background-color: #1fdf64;
+    font-size: 1.5vw;
+    border-radius: 12px;
+
+}
+#link-bt:active{
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+
+}
+
+
+@media screen and (max-width: 650px) {
+  #nav-heading {
+    font-size: 4vw;
+  }
+  a,
+  p {
+    font-size: 4vw;
+  }
+  #main {
+    margin-left: 40vw;
+  }
+  button,
+  #link-bt {
+      height: 8vw;
+      width: 16vw;
+      font-size: 3vw;
+    }
+  
+    #link-bt {
+      font-size: 2vw;
+      color: black;
+    }
+  nav {
+    align-items: left;
+    text-align: left;
+    background-color: #00ffff;
+    color: black;
+    margin: 0;
+    padding: 0vw;
+    font-size: 2vw;
+    height: 4vh;
+    padding-top: 1.5vh;
+  }
+  #Name,
+  #Email,
+  textarea {
+    width: 40vw;
+    background-color: #00ffff;
+    font-family: "Bebas Neue", cursive;
+  }
+}

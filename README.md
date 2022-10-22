@@ -8,5 +8,5 @@ It was written in python and is designed to collect links of other artists from 
 ## Website
 It has a simplistic UI and the artist data is displayed using javascript by reading a text file containing all the scraped data.
 
-## Upddates To Come
+## Updates To Come
 Because loading such a large text file takes time I am currently working to display the data on the website by making a call to my [API](http://yushyush17.pythonanywhere.com) for randomised artist data from the collected dataset.

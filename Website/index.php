@@ -26,35 +26,29 @@
 
 
     <script>
-      var artist = [];
-      fetch("genre.txt")
-        // then(load())
-        .then((response) => response.text())
-        .then((data) => {
-          x = data.split("\n");
-          for (var j = 0; j < x.length; j++) {
-            y = x[j];
-            artist.push(y.split("["));
-          }
-        });
- 
-
       function randsong() {
-        var randomItem = artist[Math.floor(Math.random() * artist.length)];
-        document.getElementById("artist_name").innerHTML =
-          "Artist Name: " + randomItem[0];
-        document.getElementById("listeners").innerHTML =
-          "Monthly Listeners: " + randomItem[1];
-        document.getElementById("link").action = randomItem[2];
-        const link_bt = document.getElementById("link-bt");
-        link_bt.value = "Artist's Spotify";
-        link_bt.style.display = "block";
-        document.getElementById("genres").innerHTML =
-          "genres: " + randomItem[3];
-        document.getElementById("finder").innerHTML = "Find Another Artist";
-        document.getElementById("intro").innerHTML =
-          "now go to the Artist's Spotify page and just start listening";
-      }
+        let xhr = new XMLHttpRequest();
+        xhr.open(
+          "get",
+          "https://yushyush17.pythonanywhere.com",
+          {"Access-Control-Allow-Origin": true}
+        );
+        xhr.send();
+
+        xhr.onload = function () {
+            const data = JSON.parse(xhr.response);
+            document.getElementById("artist_name").innerHTML =
+            "Artist Name: " + data['Name'];
+            document.getElementById("listeners").innerHTML =
+            "Monthly Listeners: " + data['Monthly Listeners'];
+            document.getElementById("link").action = data['link'];
+            const link_bt = document.getElementById("link-bt");
+            link_bt.value = "Artist's Spotify";
+            link_bt.style.display = "block";
+            document.getElementById("genres").innerHTML = "genres: " + randomItem[3];
+            document.getElementById("finder").innerHTML = "Find Another Artist";
+            document.getElementById("intro").innerHTML = "now go to the Artist's Spotify page and just start listening";
+      }; }
     </script>
     <nav class="start-items">
       <p id="nav-heading" class="navbar">Music Miner</p>
